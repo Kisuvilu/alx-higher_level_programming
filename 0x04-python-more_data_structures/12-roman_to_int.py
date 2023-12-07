@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
 
     # Define a dictionary to store the values of Roman numerals
     roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50,
-                     'C': 100, 'D': 500, 'M': 1000}
+            'C': 100, 'D': 500, 'M': 1000}
 
     total = 0
     prev_value = 0
@@ -20,8 +20,8 @@ def roman_to_int(roman_string):
         if value < prev_value:
             total -= value
         # Otherwise, add its value to the total
-        else:
-            total += value
+    else:
+        total += value
 
         # Update the previous value for the next iteration
         prev_value = value
